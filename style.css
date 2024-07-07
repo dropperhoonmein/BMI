@@ -1,0 +1,102 @@
+*{
+    text-align: center;
+    font-family: "Mukta", sans-serif;
+    font-style: normal;
+
+    margin: 0;
+    padding: 0;
+    /* border: 2px solid red; */
+}
+.black {
+    background-color: black;
+    height: 5px;
+    width: 185px;
+    border-radius: 5px;
+}
+html::-webkit-scrollbar{
+    display: none;
+}
+.white {
+    background-color: rgba(255, 255, 255, 0);
+    height: 5px;
+    width: 185px;
+}
+
+.pointer {
+    display: flex;
+}
+header h1{
+    margin: 15px auto;
+}
+body {
+    min-height: 95vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.099);
+}
+.ometer{
+    width: 400px;
+    height: 200px;
+    background-image: url("meter2.png");
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    background-repeat: no-repeat;
+    background-position: inherit;
+    margin: 15px auto;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-bottom: 35px;
+    text-align: center;
+    align-items: center;
+    margin: 15px auto;
+}
+.container input,button{
+    margin: 20px auto;
+}
+button{
+    cursor: pointer;
+    width: 257px;
+    font-size: 17px;
+    background-color: black;
+    color: white;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    box-sizing: border-box;
+    border: 1px solid black;
+}
+input{
+    width: 257px;
+    font-size: 17px;
+    border: none;
+    border-radius: 5px;
+    box-sizing: border-box;
+    padding: 5px;
+}
+p{
+    font-size: 17px;
+}
+@media(max-width:400px){
+    .ometer{
+        width: 300px;
+        height: 150px;
+    }
+    .black{
+       width: 138.75px;
+    }
+    .white{
+        width: 138.75px;
+    }
+    input,button{
+        width:240px;
+        padding: 3px;
+    }
+}
